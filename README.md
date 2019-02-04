@@ -7,3 +7,24 @@ Based on the Google Photos API.
   
 # WORK IN PROGRESS
 
+---
+
+### Upgrading von NANOGP to NANOGP2
+The API used by nanogp is depreciated by Google and will be turned off on **march 2019**.
+A new API is available but the usage is not compatible with the depreciated one.
+
+##### Migration - step by step
+1. Install nanogp2 in a new folder (do not install over nanogp)
+2. Configure nanogp2
+3. 
+
+---
+
+### Installation
+
+---
+
+### Configuration
+
+
+
