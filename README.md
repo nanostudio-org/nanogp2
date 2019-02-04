@@ -9,7 +9,7 @@ Based on the Google Photos API.
 
 ---
 ---
-### :arrow_forward: Upgrading von NANOGP to NANOGP2
+### :arrow_forward: Upgrading from NANOGP to NANOGP2
 The API used by nanogp is depreciated by Google and will be turned off on **march 2019**.
 A new API is available but the usage is not compatible with the depreciated one.
 
