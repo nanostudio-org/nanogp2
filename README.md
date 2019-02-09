@@ -15,10 +15,10 @@ A new API is available but the usage is not compatible with the depreciated one.
 
 ##### Migration - step by step:
 1. Install nanogp2 in a new folder (do not install over nanogp)  
-    - [see installation section](#installationg)
+    - [see installation section](#arrow_forward-installationg)
 2. Configure nanogp2  
     - new authorizations are required
-    - [see configuration section](#configuration)
+    - [see configuration section](#arrow_forward-configuration)
 3. update nanogallery2 settings in your HTML pages:  
    - point google2URL to the new nanogp2 URL, e.g.: `'google2URL': 'https://YOUR_WEB_SERVER/nanogp/nanogp2.php'`
    - album's IDs have changed, update the value of the `album` parameter
