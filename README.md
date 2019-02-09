@@ -15,7 +15,7 @@ A new API is available but the usage is not compatible with the depreciated one.
 
 ##### Migration - step by step:
 1. Install nanogp2 in a new folder (do not install over nanogp)  
-    - [see installation section](#arrow_forward-installationg)
+    - [see installation section](#arrow_forward-installation)
 2. Configure nanogp2  
     - new authorizations are required
     - [see configuration section](#arrow_forward-configuration)
