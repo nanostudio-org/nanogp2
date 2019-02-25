@@ -28,18 +28,17 @@ A new API is available but the usage is not compatible with the depreciated one.
 
 ### :arrow_forward: Installation
 
-## Pre-requisites:
+##### Pre-requisites:
 Web server with PHP version > 5.2  
 Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)  
 
 
-## Installation procedure  
+##### Installation procedure  
 
 - Create a folder named `nanogp` on your web server.
 - Copy the content of the `dist` folder in this folder.
 
 ---
-
 
 ### :arrow_forward: Configuration
 
@@ -56,23 +55,25 @@ Settings are defined in `admin/config.php`:
 `$albums_filter` is used to filter albums out. Albums with a title containing one of the string will not be displayed.
   
   
-## Enable Google API - Google developers console
+---
+
+### :arrow_forward: Enable Google API - Google developers console
 
 
 
-## Grant authorization
+##### Grant authorization
 
 Once the settings are defined, you need to grant authorization to your Google Photos account.  
 Use a browser to open the `authorize.php` page: `http://your_webserver/nanogp/authorize.php`  
   
 (if you want to grant authorization again, follow steps from the section `Manually revoke authorization`).
 
-## Security  
+##### Security  
 
 The `admin` folder should only be accessible to your PHP applications.  
 For example, with `deny from all` set in `.htaccess` file.
 
-## Manually revoke authorization  
+##### Manually revoke authorization  
 - delete the folder corresponding to the user in `admin/users`
 - delete application's authorization: https://myaccount.google.com/permissions
 
