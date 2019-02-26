@@ -40,6 +40,10 @@ Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)
 
 ---
 
+### :arrow_forward: Enable Google API - Google developers console
+
+---
+
 ### :arrow_forward: Configuration
 
 
@@ -57,14 +61,14 @@ Settings are defined in `admin/config.php`:
   
 ---
 
-### :arrow_forward: Enable Google API - Google developers console
+### :arrow_forward: Authorization
 
 
 
 ##### Grant authorization
 
-Once the settings are defined, you need to grant authorization to your Google Photos account.  
-Use a browser to open the `authorize.php` page: `http://your_webserver/nanogp/authorize.php`  
+Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
+Use a browser and open the `authorize.php` page: `http://your_webserver/nanogp/authorize.php`  
   
 (if you want to grant authorization again, follow steps from the section `Manually revoke authorization`).
 
@@ -75,7 +79,7 @@ For example, with `deny from all` set in `.htaccess` file.
 
 ##### Manually revoke authorization  
 - delete the folder corresponding to the user in `admin/users`
-- delete application's authorization: https://myaccount.google.com/permissions
+- delete nanogp2's authorization: https://myaccount.google.com/permissions
 
 ---
 
