@@ -81,4 +81,6 @@ For example, with `deny from all` set in `.htaccess` file.
 
 ### :arrow_forward: Retrieve one user's list of albums
 
+Command to generate a report with album's name and ID:
 
+For security reason, the report is generated in the user's folder on the server.
