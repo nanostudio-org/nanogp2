@@ -67,8 +67,9 @@ Settings are defined in `admin/config.php`:
 
 ##### Grant authorization
 
-Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
-Use a browser and open the `authorize.php` page: `http://your_webserver/nanogp/authorize.php`  
+1. Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
+2. Use a browser and open the `authorize.php` page: `http://your_webserver/nanogp/authorize.php`  
+3. Google displays a consent screen, asking you to authorize your instance of nanogp2 to request some of your data.
   
 (if you want to grant authorization again, follow steps from the section `Manually revoke authorization`).
 
