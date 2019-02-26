@@ -78,5 +78,6 @@ For example, with `deny from all` set in `.htaccess` file.
 - delete application's authorization: https://myaccount.google.com/permissions
 
 
+### :arrow_forward: Retrieve user's list of albums
 
 
