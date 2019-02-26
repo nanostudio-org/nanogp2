@@ -42,6 +42,10 @@ Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)
 
 ### :arrow_forward: Enable Google API - Google developers console
 
+1. For your nanogp2 installation, you need to register it using the Google API Console.
+2. Google then provides information you'll need later, such as a client ID and a client secret.
+3. Activate the Google Photos Library API in the Google API Console. (If the API isn't listed in the API Console, then skip this step.)
+
 ---
 
 ### :arrow_forward: Configuration
@@ -55,7 +59,7 @@ Settings are defined in `admin/config.php`:
   $albums_filter     = ['sauvegarde', 'backup'];
 ```
   
-`$cfg_client_id` and `$cfg_client_secret` can be obtained from the Google developers console.  
+`$cfg_client_id` and `$cfg_client_secret` can be obtained from the [Google developers Console](https://console.developers.google.com/).  
 `$albums_filter` is used to filter albums out. Albums with a title containing one of the string will not be displayed.
   
   
