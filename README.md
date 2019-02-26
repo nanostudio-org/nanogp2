@@ -40,7 +40,7 @@ Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)
 
 ---
 
-### :arrow_forward: Enable Google API - Google developers console
+### :arrow_forward: Enable Google API - Google API Console
 
 1. For your nanogp2 installation, you need to register it using the <b>[Google API Console](https://console.developers.google.com/)</b>.
 2. Google then provides information you'll need later, such as a client ID and a client secret.
