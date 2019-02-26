@@ -59,7 +59,7 @@ Settings are defined in `admin/config.php`:
   $albums_filter     = ['sauvegarde', 'backup'];
 ```
   
-`$cfg_client_id` and `$cfg_client_secret` can be obtained from the [Google developers Console](https://console.developers.google.com/).  
+`$cfg_client_id` and `$cfg_client_secret` can be obtained from the <b>[Google developers Console](https://console.developers.google.com/)</b>.  
 `$albums_filter` is used to filter albums out. Albums with a title containing one of the string will not be displayed.
   
   
