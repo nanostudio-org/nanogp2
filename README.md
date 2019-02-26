@@ -68,7 +68,7 @@ Client secret should never be shared. Only your nanogp2 installation should acce
   
 ---
 
-### :arrow_forward: Authorization
+### :arrow_forward: User authorization
 
 
 
