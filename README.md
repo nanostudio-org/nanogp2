@@ -61,6 +61,9 @@ Settings are defined in `admin/config.php`:
   
 <b>Client ID</b> (`$cfg_client_id`) and <b>client secret</b> (`$cfg_client_secret`) can be obtained from the <b>[Google API Console](https://console.developers.google.com/)</b>.  
 `$albums_filter` is used to filter albums out. Albums with a title containing one of the string will not be displayed.
+    
+  
+Client secret should never be shared. Only your nanogp2 installation should access it.  
   
   
 ---
