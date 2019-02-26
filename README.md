@@ -77,7 +77,8 @@ For example, with `deny from all` set in `.htaccess` file.
 - delete the folder corresponding to the user in `admin/users`
 - delete application's authorization: https://myaccount.google.com/permissions
 
+---
 
-### :arrow_forward: Retrieve user's list of albums
+### :arrow_forward: Retrieve one user's list of albums
 
 
