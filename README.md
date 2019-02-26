@@ -20,7 +20,7 @@ A new API is available but the usage is not compatible with the depreciated one.
     - new Google API authorizations are required
     - [see configuration section](#arrow_forward-configuration)
 3. update nanogallery2 settings in your HTML pages:  
-   - point google2URL to the new nanogp2 URL, e.g.: `'google2URL': 'https://YOUR_WEB_SERVER/nanogp/nanogp2.php'`
+   - point google2URL to the new nanogp2 URL, e.g.: `'google2URL': 'https://YOUR_WEB_SERVER/nanogp2/nanogp2.php'`
    - album's IDs have changed, update the value of the `album` parameter
 
 ---
@@ -35,7 +35,7 @@ Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)
 
 ##### Installation procedure  
 
-- Create a folder named `nanogp` on your web server.
+- Create a folder named `nanogp2` on your web server.
 - Copy the content of the `dist` folder in this folder.
 
 ---
@@ -59,7 +59,7 @@ Settings are defined in `admin/config.php`:
   $albums_filter     = ['sauvegarde', 'backup'];
 ```
   
-`$cfg_client_id` and `$cfg_client_secret` can be obtained from the <b>[Google API Console](https://console.developers.google.com/)</b>.  
+<b>Client ID</b> (`$cfg_client_id`) and <b>client secret</b> (`$cfg_client_secret`) can be obtained from the <b>[Google API Console](https://console.developers.google.com/)</b>.  
 `$albums_filter` is used to filter albums out. Albums with a title containing one of the string will not be displayed.
   
   
@@ -72,7 +72,7 @@ Settings are defined in `admin/config.php`:
 ##### Grant authorization
 
 1. Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
-2. Use a browser and open the `authorize.php` page: `http://your_webserver/nanogp/authorize.php`  
+2. Use a browser and open the `authorize.php` page: `http://your_webserver/nanogp2/authorize.php`  
 3. Google displays a consent screen, asking you to authorize your instance of nanogp2 to request some of your data.
   
 (if you want to grant authorization again, follow steps from the section `Manually revoke authorization`).
