@@ -94,8 +94,8 @@ For example, with `deny from all` set in `.htaccess` file.
 ### :arrow_forward: Retrieve one user's list of albums
 
 Command to generate a report with the list of album's names and IDs for one specific user:  
-`https://YOUR_WEBSERVER/nanogp2/nanogp2.php?nguserid=USER_ID&report`  
+`https://YOUR_WEB_SERVER/nanogp2/nanogp2.php?nguserid=USER_ID&report`  
   
-Replace `YOUR_WEBSERVER` and `USER_ID` with the correct values for your nanogp2 instance.
+Replace `YOUR_WEB_SERVER` and `USER_ID` with the correct values for your nanogp2 instance.
 
 For security reason, the report is generated in the user's folder on the server.
