@@ -31,6 +31,7 @@ A new API is available but the usage is not compatible with the depreciated one.
 ##### Pre-requisites:
 Web server with PHP version > 5.2  
 Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)  
+**nanogallery2 v2.4.O**
 
 
 ##### Installation procedure  
