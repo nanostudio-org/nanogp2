@@ -4,7 +4,7 @@
 * http://nanogallery2.nanostudio.org
 *
 * PHP 5.2+
-* @version    2.0.0
+* @version    2.0.1
 * @author     Christophe Brisbois - http://www.brisbois.fr/
 * @copyright  Copyright 2019
 * @license    GPLv3
@@ -43,6 +43,8 @@
     unset($request['_']);
   }
 
+  $content_kind = $request['kind'];
+
   // option for generating a report of the user's Google Photo content
   // to avoid publishing confidential data, the report is only viewable with restricted access (in the user folder)	
   $generate_report = false;
@@ -55,9 +57,9 @@
 
     $report = "Data for user " . $user_id . "\r\n\r\n";
     unset($request['report']);
+		$content_kind = 'album';
   }
 
-  $content_kind = $request['kind'];
   
   if( !function_exists('curl_version') ) {
     response_json( array('nano_status' => 'error', 'nano_message' => 'Please install/enable CURL on your web server.' ) );

@@ -4,7 +4,7 @@
 * http://nanogallery2.nanostudio.org
 *
 * PHP 5.2+
-* @version    1.3.0
+* @version    2.0.1
 * @author     Christophe Brisbois - http://www.brisbois.fr/
 * @copyright  Copyright 2017
 * @license    GPLv3
@@ -28,7 +28,7 @@
   include('admin/config.php');
   include('admin/tools.php');
 
-  // check CURL installation
+  // check CURL availability
   if( !function_exists('curl_version') ) {
     response_json( array('nano_status' => 'error', 'nano_message' => 'Please install/enable CURL to execute this application.' ) );
     exit;
@@ -47,14 +47,11 @@
 
   set_globals();
 
-  // if( count($_GET) == 0 && $cfg_max_accounts == 1  ) {
   if( !isset($_GET['code']) && !isset($_GET['revoke']) && !isset($_GET['user_info']) && $cfg_max_accounts == 1  ) {
     foreach( glob( 'admin/users/*', GLOB_ONLYDIR ) as $folder) 
     {	
-      // echo "Filename: " . $folder . "<br />";	
       $atoken=file_get_contents( $folder . '/token_a.txt');
       $rtoken=file_get_contents( $folder . '/token_r.txt');
-      // $user_id=file_get_contents('user. txt');
       $user_id = basename($folder);
       if( $atoken !== false && $atoken != '' && $rtoken !== false && $rtoken != '' && $user_id != '' ) {
         display_settings();
@@ -72,17 +69,15 @@
     $params = array(
       "response_type" =>  "code",
       "client_id" =>      $cfg_client_id,
-      // "redirect_uri" =>   $prot . $_SERVER["	"] . $_SERVER["PHP_SELF"],
-      "redirect_uri" =>   "https://nano.gallery/nanogp2/authorize.php",
+      "redirect_uri" =>   $prot . $_SERVER["	"] . $_SERVER["PHP_SELF"],
+      // "redirect_uri" =>   "https://nano.gallery/nanogp2/authorize.php",
       "access_type" =>    "offline",
-      // "scope" =>          "https://picasaweb.google.com/data profile"
-      //"scope" =>          "https://picasaweb.google.com/data profile email"
       "scope" =>          "https://www.googleapis.com/auth/photoslibrary.readonly profile email"
     );
 
     $request_to = OAUTH2_AUTH_URL . '?' . http_build_query($params, '', '&');
 
-    header("Location: " . $request_to);     // display authorization form
+    header("Location: " . $request_to);     // display consent screen
   }
 
   
@@ -117,7 +112,6 @@
       
       // retrieve user ID
       $ch = curl_init();
-      // curl_setopt($ch, CURLOPT_URL, 'https://picasaweb.google.com/data/feed/api/user/default?access_token=' . $authObj->access_token );
       curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/oauth2/v2/userinfo?access_token=' . $authObj->access_token );
       curl_setopt($ch, CURLOPT_HEADER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -158,7 +152,6 @@
               file_put_contents( 'admin/users/' . $user_id . '/profile.txt', $objProfile->email);
             }
             
-            // echo 'Authorisation successfully granted.' . PHP_EOL . '<br/>';
             response_json( array('nano_status' => 'ok', 'nano_message' => 'Authorisation successfully granted (userID='.$user_id.').' ) );
           }
           else {
@@ -182,8 +175,6 @@
     }
   } 
 
-
-  
   
   // ##########
   // REVOKE USER AUTHORIZATION
