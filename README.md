@@ -96,7 +96,7 @@ At the end of the process, your **user-ID** is displayed. This value should be s
   
 #### nanogallery2 parameters
 
-After authorization is granted, from your browser, open the `authorize.php` file again to display the parameters for nanogallery2.
+After authorization is granted, from your browser, open the `authorize.php` page again to display the parameters for nanogallery2.
 
 #### Security  
 
