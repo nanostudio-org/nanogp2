@@ -87,9 +87,10 @@ Client secret should never be shared. Only your nanogp2 installation should acce
 1. Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
 2. Use a browser and open the `authorize.php` page: `http://YOUR_WEB_SERVER/nanogp2/authorize.php`  
 3. Google displays a consent screen, asking you to authorize your instance of nanogp2 to request some of your data.
-If you get a warning message `This app isn't verified`, you need to display the advanced options to grant authorization to your installation.  
+If you get a warning message `This app isn't verified`, you need to display the advanced options to grant authorization to your nanogp2 instance.  
 
-
+At the end of the process, your user-ID is displayed. This value should be set in your nanogallery2's options (`userID`).  
+  
 (if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
 
 ##### Security  
