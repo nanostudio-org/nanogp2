@@ -92,6 +92,11 @@ If you get a warning message `This app isn't verified`, you need to display the 
 At the end of the process, your **user-ID** is displayed. This value should be set in your **nanogallery2's options** (`userID`).  
   
 (if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
+  
+  
+##### nanogallery2 parameters
+
+After authorization is granted, from your browser, open the `authorize.php` file again to display the parameters for nanogallery2.
 
 ##### Security  
 
