@@ -85,7 +85,7 @@ If you get a warning message `This app isn't verified`, you need to display the 
 ##### Security  
 
 The `admin` folder should only be accessible to your PHP applications, and not from a browser.  
-For example, you can put an `.htaccess` file containing `deny from all`.
+For this, you may for example put an `.htaccess` file containing `deny from all`.
 
 ##### Manually revoke authorization  
 - delete the folder corresponding to the user in `admin/users`
