@@ -80,7 +80,7 @@ Client secret should never be shared. Only your nanogp2 installation should acce
 If you get a warning message `This app isn't verified`, you need to display the advanced options to grant authorization to your installation.  
 
 
-(if you've granted hautorization and if you want to grant authorization again, follow steps from the section `Manually revoke authorization`).
+(if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
 
 ##### Security  
 
