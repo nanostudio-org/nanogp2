@@ -75,10 +75,10 @@ Client secret should never be shared. Only your nanogp2 installation should acce
 ##### Grant authorization
 
 1. Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
-2. Use a browser and open the `authorize.php` page: `http://your_webserver/nanogp2/authorize.php`  
+2. Use a browser and open the `authorize.php` page: `http://YOUR_WEB_SERVER/nanogp2/authorize.php`  
 3. Google displays a consent screen, asking you to authorize your instance of nanogp2 to request some of your data.
   
-(if you want to grant authorization again, follow steps from the section `Manually revoke authorization`).
+(if you've granted hautorization and if you want to grant authorization again, follow steps from the section `Manually revoke authorization`).
 
 ##### Security  
 
@@ -87,7 +87,7 @@ For example, with `deny from all` set in `.htaccess` file.
 
 ##### Manually revoke authorization  
 - delete the folder corresponding to the user in `admin/users`
-- delete nanogp2's authorization: https://myaccount.google.com/permissions
+- delete the authorization to your instance of `nanogp2`: https://myaccount.google.com/permissions
 
 ---
 
