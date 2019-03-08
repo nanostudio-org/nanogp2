@@ -44,12 +44,12 @@ A new API is available but the usage is not compatible with the depreciated one.
 ### :arrow_forward: Enable Google API - Google API Console
 
 1. For your nanogp2 installation, you need to register your instance using the <b>[Google API Console](https://console.developers.google.com/)</b>.
-  - create a new project called **nanogallery2gp-YOUR-INSTANCE-NAME** (the project name should be unique, so replace YOUR-INSTANCE-NAME with the name of your own instance)
-  - create a **OAuth consent screen**
-    - application name: `nanogallery2gp-YOUR-INSTANCE-NAME`
-    - set the support email
-    - add scopes: `email`, `profile`, `openid`
-    - authorized domains: name of the domain where your nanogp2 is installed
+    - create a new project called **nanogallery2gp-YOUR-INSTANCE-NAME** (the project name should be unique, so replace YOUR-INSTANCE-NAME with the name of your own instance)
+    - create a **OAuth consent screen**
+      - application name: `nanogallery2gp-YOUR-INSTANCE-NAME`
+      - set the support email
+      - add scopes: `email`, `profile`, `openid`
+      - authorized domains: name of the domain where your nanogp2 is installed
   - create credentials kind **OAuth Client ID**
     - application type: `Web application`
     - name: `nanogallery2gp-YOUR-INSTANCE-NAME`
