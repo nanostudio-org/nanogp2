@@ -50,10 +50,10 @@ A new API is available but the usage is not compatible with the depreciated one.
       - set the support email
       - add scopes: `email`, `profile`, `openid`
       - authorized domains: name of the domain where your nanogp2 is installed
-  - create credentials kind **OAuth Client ID**
-    - application type: `Web application`
-    - name: `nanogallery2gp-YOUR-INSTANCE-NAME`
-    - Authorized redirect URIs: set the full path to your `authorize.php` (once with `http`, and once with `https`)
+    - create credentials kind **OAuth Client ID**
+      - application type: `Web application`
+      - name: `nanogallery2gp-YOUR-INSTANCE-NAME`
+      - Authorized redirect URIs: set the full path to your `authorize.php` (once with `http`, and once with `https`)
 2. Google then provides information you'll need later, such as a **client ID** and a **client secret**.
 3. Activate the **Google Photos Library API** in  the **Google API Console**. (If the API isn't listed in the API Console, then skip this step).
 
