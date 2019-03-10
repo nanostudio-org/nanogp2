@@ -28,13 +28,13 @@ A new API is available but the usage is not compatible with the depreciated one.
 
 ### :arrow_forward: Installation
 
-##### Pre-requisites:
+##### :heavy_minus_sign: Pre-requisites:
 - Web server with PHP version > 5.2  
 - Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)  
 - **nanogallery2 v2.4.O**
 
 
-##### Installation procedure  
+##### :heavy_minus_sign: Installation procedure  
 
 - Create a folder named `nanogp2` on your web server.
 - Copy the content of the `dist` folder in this folder.
@@ -74,7 +74,7 @@ Settings are defined in `admin/config.php`:
 `$albums_filter` is used to filter albums out. Albums with a title containing one of the string will not be displayed.
     
   
-Client secret should never be shared. Only your nanogp2 installation should access it.  
+**Client secret should never be shared**. Only your nanogp2 installation should access it.  
   
   
 ---
@@ -83,7 +83,7 @@ Client secret should never be shared. Only your nanogp2 installation should acce
 
 
 
-#### Grant authorization
+#### :heavy_minus_sign: Grant authorization
 
 1. Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
 2. Use a browser and open the `authorize.php` page: `http://YOUR_WEB_SERVER/nanogp2/authorize.php`  
@@ -95,16 +95,16 @@ At the end of the process, your **user-ID** is displayed. This value should be s
 (if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
   
   
-#### nanogallery2 parameters
+#### :heavy_minus_sign: nanogallery2 parameters
 
 After authorization is granted, from your browser, open the `authorize.php` page again to display the parameters for nanogallery2.
 
-#### Security  
+#### :heavy_minus_sign: Security  
 
 The `admin` folder should only be accessible to your PHP applications, and not from a browser.  
 For this, you may for example put an `.htaccess` file containing `deny from all`.
 
-#### Manually revoke authorization  
+#### :heavy_minus_sign: Manually revoke authorization  
 - delete the folder corresponding to the user in `admin/users`
 - delete the authorization to your instance of `nanogp2`: https://myaccount.google.com/permissions
 
