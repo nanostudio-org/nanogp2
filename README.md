@@ -74,7 +74,7 @@ Settings are defined in `admin/config.php`:
 `$albums_filter` is used to filter albums out. Albums with a title containing one of the string will not be displayed.
     
   
-**Client secret should never be shared**. Only your nanogp2 installation should access it.  
+:heavy_exclamation_mark: **Client secret should never be shared** :heavy_exclamation_mark: . Only your nanogp2 installation should access it.  
   
   
 ---
