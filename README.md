@@ -36,7 +36,7 @@ A new API is available but the usage is not compatible with the depreciated one.
 
 ##### :heavy_minus_sign: Pre-requisites:
 - Web server with PHP version > 5.2  
-- Cannot be run on `localhost` (workaround, use `http://lvh.me` instead)  
+- Cannot be run on `localhost`  
 - **nanogallery2 v2.4.O**
 
 
@@ -101,7 +101,7 @@ Settings are defined in `admin/config.php`:
 #### :heavy_minus_sign: Grant authorization
 
 1. Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
-2. Use a browser and open the `authorize.php` page: `http://YOUR_WEB_SERVER/nanogp2/authorize.php`  
+2. Use a browser and open the `authorize.php` page: `https://YOUR_WEB_SERVER/nanogp2/authorize.php`  
 3. Google displays a consent screen, asking you to authorize your instance of nanogp2 to request some of your data.
 If you get a warning message `This app isn't verified`, you need to display the advanced options to grant authorization to your nanogp2 instance.  
 
