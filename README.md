@@ -6,7 +6,8 @@ Based on the Google Photos API.
   
 &nbsp;    
 &nbsp;    
-#### :exclamation::exclamation::exclamation: USE OF THIS APP REQUIRES ADVANCED SKILLS :exclamation::exclamation::exclamation:
+#### USE OF THIS APP REQUIRES ADVANCED SKILLS :exclamation:
+This app is delivered as-is, changes by Google may break it without warning.  
 
 &nbsp;    
 &nbsp;    
