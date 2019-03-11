@@ -19,7 +19,7 @@ A new API is available but the usage is not compatible with the depreciated one.
 
 ##### Migration - step by step:
 1. Install nanogp2 in a new folder (do not install over nanogp)  
-    - [see installation section](#arrow_forward-installation)
+    - [see installation section](#arrow_forward-installation)  
 2. Configure nanogp2  
     - new Google API authorizations are required
     - [see configuration section](#arrow_forward-configuration)
@@ -97,7 +97,7 @@ Settings are defined in `admin/config.php`:
 ### :arrow_forward: User authorization
 
 
-
+&nbsp;    
 #### :heavy_minus_sign: Grant authorization
 
 1. Once the settings are defined, you need to grant authorization to nanogp2 to access your Google Photos account.  
@@ -110,15 +110,18 @@ At the end of the process, your **user-ID** is displayed. This value should be s
 (if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
   
   
+&nbsp;    
 #### :heavy_minus_sign: nanogallery2 parameters
 
 After authorization is granted, from your browser, open the `authorize.php` page again to display the parameters for nanogallery2.
 
+&nbsp;    
 #### :heavy_minus_sign: Security  
 
 The `admin` folder should only be accessible to your PHP applications, and not from a browser.  
 For this, you may for example put an `.htaccess` file containing `deny from all`.
 
+&nbsp;    
 #### :heavy_minus_sign: Manually revoke authorization  
 - delete the folder corresponding to the user in `admin/users`
 - delete the authorization to your instance of `nanogp2`: https://myaccount.google.com/permissions
