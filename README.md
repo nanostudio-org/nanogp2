@@ -2,11 +2,14 @@
 
 PHP add-on for <b>[nanogallery2](https://github.com/nanostudio-org/nanogallery2)</b> for accessing **Google Photos** content.   
   
-Based on the Google Photos API.
+Based on the Google Photos API.  
   
-  
+&nbsp;    
+&nbsp;    
+#### :exclamation::exclamation::exclamation: USE OF THIS APP REQUIRES ADVANCED SKILLS :exclamation::exclamation::exclamation:
 
-
+&nbsp;    
+&nbsp;    
 ---
 ---
 ### :arrow_forward: Upgrading from NANOGP to NANOGP2
@@ -25,6 +28,8 @@ A new API is available but the usage is not compatible with the depreciated one.
 
 ---
 ---
+&nbsp;    
+&nbsp;    
 
 ### :arrow_forward: Installation
 
@@ -40,6 +45,9 @@ A new API is available but the usage is not compatible with the depreciated one.
 - Copy the content of the `dist` folder in this folder.
 
 ---
+
+&nbsp;    
+&nbsp;    
 
 ### :arrow_forward: Enable Google API - Google API Console
 
@@ -58,6 +66,9 @@ A new API is available but the usage is not compatible with the depreciated one.
 3. Activate the **Google Photos Library API** in  the **Google API Console**. (If the API isn't listed in the API Console, then skip this step).
 
 ---
+
+&nbsp;    
+&nbsp;    
 
 ### :arrow_forward: Configuration
 
@@ -78,6 +89,9 @@ Settings are defined in `admin/config.php`:
   
   
 ---
+
+&nbsp;    
+&nbsp;    
 
 ### :arrow_forward: User authorization
 
@@ -109,6 +123,9 @@ For this, you may for example put an `.htaccess` file containing `deny from all`
 - delete the authorization to your instance of `nanogp2`: https://myaccount.google.com/permissions
 
 ---
+
+&nbsp;    
+&nbsp;    
 
 ### :arrow_forward: Retrieve one user's list of albums
 
