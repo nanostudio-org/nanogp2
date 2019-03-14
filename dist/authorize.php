@@ -1,6 +1,6 @@
 <?php
 /**
-* nanogp add-on for nanogallery2 to display Google Photos images/albums
+* nanogp2 add-on for nanogallery2 for displaying Google Photos images/albums
 * http://nanogallery2.nanostudio.org
 *
 * PHP 5.2+
@@ -8,8 +8,8 @@
 * @author     Christophe Brisbois - http://www.brisbois.fr/
 * @copyright  Copyright 2017
 * @license    GPLv3
-* @link       https://github.com/nanostudio-org/nanogp
-* @Support    https://github.com/nanostudio-org/nanogp/issues
+* @link       https://github.com/nanostudio-org/nanogp2
+* @Support    https://github.com/nanostudio-org/nanogp2/issues
 *
 */
 
@@ -36,7 +36,7 @@
   
   // check write permissions
   if( !is_writable('admin/users') ) {
-    response_json( array('nano_status' => 'error', 'nano_message' => 'Error: no write permissions to folder admin/users.' ) );
+    response_json( array('nano_status' => 'error', 'nano_message' => 'Error: no write permissions on folder admin/users.' ) );
     exit;
   }
   
