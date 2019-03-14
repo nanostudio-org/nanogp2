@@ -37,7 +37,7 @@ A new API is available but the usage is not compatible with the depreciated one.
 ##### :heavy_minus_sign: Pre-requisites:
 - Web server with PHP version > 5.4+  
 - Cannot be run on `localhost`  
-- **nanogallery2 v2.4.O**
+- **nanogallery2 v2.4.1**
 
 
 ##### :heavy_minus_sign: Installation procedure  
