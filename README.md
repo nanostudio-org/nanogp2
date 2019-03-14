@@ -131,6 +131,19 @@ For this, you may for example put an `.htaccess` file containing `deny from all`
 &nbsp;    
 &nbsp;    
 
+### :arrow_forward: CONFIDENTIALITY
+
+All your photos albums can by accessed by nanogp2. This may be misused by malicious people.  
+Please use **nanogp2 only with a Google Photos account which does not contain any personal or privat data**.  
+  
+- USE A DEDICATED GOOGLE PHOTOS ACCOUNT.  
+- configure the option `$albums_filter` to protect your privacy!  
+
+---
+
+&nbsp;    
+&nbsp;    
+
 ### :arrow_forward: Retrieve one user's list of albums
 
 Command to generate a report with the list of album's names and IDs for one specific user:  
