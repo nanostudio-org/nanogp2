@@ -47,13 +47,13 @@
   }
   set_globals();
 
-  echo '- URL current page: ' . $prot . $_SERVER["SERVER_NAME"] . $_SERVER["PHP_SELF"] . PHP_EOL . '<br/>';
+  echo '- URL current page: ' . $prot . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"] . PHP_EOL . '<br/>';
 
 
   $params = array(
     "response_type" =>  "code",
     "client_id" =>      $cfg_client_id,
-    "redirect_uri" =>   $prot . $_SERVER["SERVER_NAME"] . $_SERVER["PHP_SELF"],
+    "redirect_uri" =>   $prot . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"],
     // "redirect_uri" =>   "https://nano.gallery/nanogp2/authorize.php",
     "access_type" =>    "offline",
     "scope" =>          "https://www.googleapis.com/auth/photoslibrary.readonly profile email"
