@@ -136,8 +136,8 @@ For this, you may for example put an `.htaccess` file containing `deny from all`
 All your photos albums can by accessed by nanogp2. This may be misused by malicious people.  
 Please use **nanogp2 only with a Google Photos account which does not contain any personal or privat data**.  
   
-- USE A DEDICATED GOOGLE PHOTOS ACCOUNT.  
-- configure the option `$albums_filter` to protect your privacy!  
+- USE A DEDICATED GOOGLE PHOTOS ACCOUNT
+- configure the option `$albums_filter` to protect your privacy
 
 ---
 
