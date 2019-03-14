@@ -4,7 +4,7 @@
 * http://nanogallery2.nanostudio.org
 *
 * PHP 5.2+
-* @version    2.0.1
+* @version    2.0.2
 * @author     Christophe Brisbois - http://www.brisbois.fr/
 * @copyright  Copyright 2017
 * @license    GPLv3
@@ -69,7 +69,7 @@
     $params = array(
       "response_type" =>  "code",
       "client_id" =>      $cfg_client_id,
-      "redirect_uri" =>   $prot . $_SERVER["	"] . $_SERVER["PHP_SELF"],
+      "redirect_uri" =>   $prot . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"],
       // "redirect_uri" =>   "https://nano.gallery/nanogp2/authorize.php",
       "access_type" =>    "offline",
       "scope" =>          "https://www.googleapis.com/auth/photoslibrary.readonly profile email"
