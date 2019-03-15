@@ -4,7 +4,7 @@
 * http://nanogallery2.nanostudio.org
 *
 * PHP 5.2+
-* @version    2.0.2
+* @version    2.0.3
 * @author     Christophe Brisbois - http://www.brisbois.fr/
 * @copyright  Copyright 2019
 * @license    GPLv3
@@ -52,10 +52,10 @@
   if( isset($_GET['report']) ) {
     $generate_report = true;
     $content_kind = 'album';
-    // file_put_contents( 'admin/users/' . $user_id . '/content.txt', 'Data for user ' . $user_id . '\r\n');
-    // file_put_contents( 'admin/users/' . $user_id . '/content.txt', '\r\n');
+    file_put_contents( 'admin/users/' . $user_id . '/google_photos_data.txt', 'Data for user ' . $user_id . "\r\n");
+    file_put_contents( 'admin/users/' . $user_id . '/google_photos_data.txt', "\r\n", FILE_APPEND);
 
-    $report = "Data for user " . $user_id . "\r\n\r\n";
+    // $report = "Data for user " . $user_id . "\r\n\r\n";
     unset($request['report']);
 		$content_kind = 'album';
   }
@@ -95,7 +95,7 @@
     }
     else {
       // write to report file in the user folder
-      file_put_contents( 'admin/users/' . $user_id . '/google_photos_data.txt', $report);
+      // file_put_contents( 'admin/users/' . $user_id . '/google_photos_data.txt', $report);
       response_json( array('nano_status' => 'ok', 'nano_message' => 'The report for user ' . $user_id . ' has been generated on the server.' ) );
     }
 	}
@@ -122,7 +122,7 @@
   
   // ##### send the request to GOOGLE PHOTOS
   function send_gprequest( $url, $content_kind, $nextPageToken ) {
-    global $callback, $atoken, $request, $albums, $album_id, $medias, $generate_report, $report;	
+    global $callback, $atoken, $request, $albums, $album_id, $medias, $generate_report, $report, $user_id;	
 
 		$request = array();
     $request['access_token'] = $atoken;
@@ -204,7 +204,9 @@
             if( property_exists((object) $v, 'shareInfo') ) {
               $sh = ' - shared: ' . $v[shareInfo] . ' ';
             }
-            $report .= $v['title'] . " - " . $v[id] . " - number of medias: [" . $v[mediaItemsCount] . ']' . $sh . $f . "\r\n";
+            // $report .= $v['title'] . " - " . $v[id] . " - number of medias: [" . $v[mediaItemsCount] . ']' . $sh . $f . "\r\n";
+            $re = $v['title'] . " - " . $v[id] . " - number of medias: " . $v[mediaItemsCount] . ' ' . $sh . $f . "\r\n";
+						file_put_contents( 'admin/users/' . $user_id . '/google_photos_data.txt', $re, FILE_APPEND);
           }
           else {
             // append single album to array
