@@ -96,6 +96,7 @@
     else {
       // write to report file in the user folder
       // file_put_contents( 'admin/users/' . $user_id . '/google_photos_data.txt', $report);
+			file_put_contents( 'admin/users/' . $user_id . '/google_photos_data.txt', "\r\n### end of report ###\r\n", FILE_APPEND);
       response_json( array('nano_status' => 'ok', 'nano_message' => 'The report for user ' . $user_id . ' has been generated on the server.' ) );
     }
 	}
