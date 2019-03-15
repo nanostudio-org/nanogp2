@@ -107,6 +107,7 @@ If you get a warning message `This app isn't verified`, you need to display the 
 
 At the end of the process, your **user-ID** is displayed. This value should be set in your **nanogallery2's options** (`userID`).  
   
+    
 (if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
   
   
@@ -153,4 +154,4 @@ Replace `YOUR_WEB_SERVER` and `USER_ID` with the correct values for your nanogp2
 
 For security reason, the report is generated in the user's folder on the server (`nanogp2/admin/users/USER_ID/content.txt`).  
   
-**Note:** this report is only for your information and is not used by nanogallery2.
+> **Note:** this report is only for your information and is not used by nanogallery2.
