@@ -25,7 +25,7 @@ A new API is available but the usage is not compatible with the depreciated one.
     - [see configuration section](#arrow_forward-configuration)
 3. update nanogallery2 settings in your HTML pages:  
    - point google2URL to the new nanogp2 URL, e.g.: `'google2URL': 'https://YOUR_WEB_SERVER/nanogp2/nanogp2.php'`
-   - album's IDs have changed, update the value of the `album` parameter
+   - album's IDs have changed, update the value of the `album` parameter, if you use it.
 
 ---
 ---
