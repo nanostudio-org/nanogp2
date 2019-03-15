@@ -152,6 +152,6 @@ Command to generate a report with the list of album's names and IDs for one spec
   
 Replace `YOUR_WEB_SERVER` and `USER_ID` with the correct values for your nanogp2 instance.
 
-For security reason, the report is generated in the user's folder on the server (`nanogp2/admin/users/USER_ID/content.txt`).  
+For security reason, the report is generated in the user's folder on the server (`nanogp2/admin/users/USER_ID/google_photos_data.txt`).  
   
 > **Note:** this report is only for your information and is not used by nanogallery2.
