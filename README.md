@@ -105,8 +105,9 @@ Settings are defined in `admin/config.php`:
 3. Google displays a consent screen, asking you to authorize your instance of nanogp2 to request some of your data.
 If you get a warning message `This app isn't verified`, you need to display the advanced options to grant authorization to your nanogp2 instance.  
 
-At the end of the process, your **user-ID** is displayed. This value should be set in your **nanogallery2's options** (`userID`).  
-  
+At the end of the process:
+- your **user-ID** is displayed. This value should be set in your **nanogallery2's options** (`userID`).  
+- a folder named like your **user-ID** has been created in `anogp2/admin/users`. It contains `profile.txt`, `token_a.txt` and `token_r.txt`.  **Never delete these files**.  
     
 (if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
   
