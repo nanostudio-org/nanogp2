@@ -107,7 +107,7 @@ If you get a warning message `This app isn't verified`, you need to display the 
 
 At the end of the process:
 - your **user-ID** is displayed. This value should be set in your **nanogallery2's options** (`userID`).  
-- a folder named like your **user-ID** has been created in `anogp2/admin/users`. It contains `profile.txt`, `token_a.txt` and `token_r.txt`.  **Never delete these files**.  
+- a folder named like your **user-ID** has been created in `nanogp2/admin/users`. It contains the files `profile.txt`, `token_a.txt` and `token_r.txt`.  **Never delete these files**.  
     
 (if you've granted authorization and if you want to grant authorization again, follow the steps from the section `Manually revoke authorization`).
   
