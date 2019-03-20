@@ -61,7 +61,7 @@ You should have a structure with these folders, files and permissions:
              │   xxxx     [rwx---r-x]
              │   ...      [rwx---r-x]
 ```
-
+  &nbsp;  
 ---
 
 &nbsp;    
