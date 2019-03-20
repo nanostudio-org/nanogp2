@@ -45,6 +45,23 @@ A new API is available but the usage is not compatible with the depreciated one.
 - Create a folder named `nanogp2` on your web server.
 - Copy the content of the `dist` folder in this folder.
 
+You should have a structure with these folders, files and permissions:
+```
+     nanogp2              [rwx---r-x]
+     │   authorize.php    [rw----r--]
+     │   check.php        [rw----r--]
+     │   nanogp2.php      [rw----r--]
+     │
+     └─── admin           [rwx---r-x]
+         │   .htaccess    [rw----r--]
+         │   config.php   [rw----r--]
+         │   tools.php    [rw----r--]
+         │
+         └─── users       [rwx---r-x]
+             │   xxxx     [rwx---r-x]
+             │   ...      [rwx---r-x]
+```
+
 ---
 
 &nbsp;    
