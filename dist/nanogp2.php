@@ -4,7 +4,7 @@
 * http://nanogallery2.nanostudio.org
 *
 * PHP 5.2+
-* @version    2.0.3
+* @version    2.0.4
 * @author     Christophe Brisbois - http://www.brisbois.fr/
 * @copyright  Copyright 2019
 * @license    GPLv3
@@ -128,7 +128,7 @@
 		$request = array();
     $request['access_token'] = $atoken;
 		if( $content_kind == 'album' ) {
-			$request['pageSize'] = '50';
+			$request['pageSize'] = 50;
 			if( $nextPageToken != '' ) {
 				$request['pageToken'] = $nextPageToken;
 			}
