@@ -3,6 +3,7 @@
 PHP add-on for <b>[nanogallery2](https://github.com/nanostudio-org/nanogallery2)</b> for accessing **Google Photos** content.   
   
 Based on the Google Photos API.  
+Support albums and photos (not videos).  
   
 &nbsp;    
 &nbsp;    
