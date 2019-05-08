@@ -8,7 +8,8 @@ Supported content: albums and photos (not videos).
 &nbsp;    
 &nbsp;    
 #### USE OF THIS APP REQUIRES ADVANCED SKILLS :exclamation:
-This app is delivered as-is, changes on Google side may break it without any warning.  
+This app is delivered AS-IS, changes on Google side may break it without any warning.  
+Use at your own risk.  
 
 &nbsp;    
 &nbsp;    
