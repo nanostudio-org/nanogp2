@@ -4,6 +4,7 @@ PHP add-on for <b>[nanogallery2](https://github.com/nanostudio-org/nanogallery2)
   
 Based on the Google Photos API.  
 Supported content: albums and photos (not videos).  
+Please note that the Google Photos API has a limit of 10.000 requests per day.  
   
 &nbsp;    
 &nbsp;    
