@@ -187,12 +187,22 @@
 				foreach ($received['albums'] as $k => $v) {
 					// filter albums (see configuration)
           
-					global $albums_filter;
+					global $albums_filter, $white_list;
           $value = $v['title'];
 					$filter = false;
           foreach( $albums_filter as $one_filter ) {
             if (stripos($value, $one_filter) !== false) {
               $filter = true;
+            }
+          }
+          // White list
+          foreach( $white_list as $one_whitelist ) {
+            if (stripos($value, $one_whitelist) === false) {
+              $filter = true;
+            }
+            else {
+              // strip white list phrase from title
+              $v['title'] = str_ireplace($one_whitelist,"",$v['title']);
             }
           }
           if( $generate_report ) {
